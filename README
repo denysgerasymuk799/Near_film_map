@@ -1,0 +1,47 @@
+# Near_film_map
+
+Інформацію про призначення модуля
+
+На веб-карті зображується інформація про місця де знімалися фільми, які були зняті того чи іншого року.
+Користувач вказує для фільмів якого року він бажає побудувати карту та свою локацію як широту (latitude) та довготу (longitude) (e.g. 49.83826,24.02324), і як результат отримує HTML файл.
+
+У результаті створюєтья карта map 2000_movies_map.html, де зображений результат запиту.
+
+
+
+Опис структури html файлу та тегів розмітки, які були згенеровані
+html файл складається з javascript та html коду
+у подібних тегах до <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/> -
+вказані силки на стиль карт
+у подібних тегах до <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script> -
+вказані силки на стиль карт
+
+
+Короткий висновок про інформацію, яку нам надає така карта
+
+Карта має три шари (шар міток, шар, де вказується розташування користувача та шар, де розфарбовано за кількістю безробітніх в США станом на жовтень 2012). На карті зображені 10 міток найближчих зйомок фільмів.
+Карта може бути корисною для любителів подорожей та тим, хто захоплюється фільмами.
+
+
+
+Приклад запуску (рік і локація) введення та скріншот згенерованої мапи
+
+>>> python film_map.py
+    Please enter a year you would like to have a map for: 2017
+    Please enter your location (format: lat, long): 49.83826, 24.02324
+    Map is generating...
+    Please wait...
+    Finished. Please have look at the map 2000_movies_map.html
+
+
+the result screenshot - data/map1.jpg
+
+>>> python film_map.py
+    Please enter a year you would like to have a map for: 2017
+    Please enter your location (format: lat, long): 37.38605, -122.08385
+    Map is generating...
+    Please wait...
+    Finished. Please have look at the map 2000_movies_map.html
+
+
+the result screenshot - data/map_usa.jpg and  data/map_usa2.jpg
